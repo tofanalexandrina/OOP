@@ -14,7 +14,7 @@ void pointers_example_1();
 void pointers_example_3();
 void pointers_example_4();
 
-int functie();
+void functie();
 
 int main()
 {
@@ -238,7 +238,7 @@ void pointers_example_4()
 
 	_getch();
 }
-int functie() {
+void functie() {
 	int x = 7;
 	int* addr_x = &x;
 	int** addr_addr_x = &addr_x;
@@ -249,6 +249,5 @@ int functie() {
 	cout << **addr_addr_x;
 	cout << ***addr_addr_addr_x;
 
-	return 0;
 
 }
